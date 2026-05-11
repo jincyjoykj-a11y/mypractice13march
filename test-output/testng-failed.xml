@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Regression Suite]">
+  <test thread-count="2" parallel="tests" name="Chrome Tests(failed)">
+    <classes>
+      <class name="test.FactorialCalculations">
+        <methods>
+          <include name="setup"/>
+          <include name="closeApp"/>
+          <include name="verifyFactorial"/>
+        </methods>
+      </class> <!-- test.FactorialCalculations -->
+      <class name="test.BugDetection">
+        <methods>
+          <include name="verifyNegativeInputBug"/>
+          <include name="setup"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- test.BugDetection -->
+    </classes>
+  </test> <!-- Chrome Tests(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->

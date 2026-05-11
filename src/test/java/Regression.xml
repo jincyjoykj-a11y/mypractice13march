@@ -1,0 +1,14 @@
+
+<suite name="Regression Suite" parallel="tests" thread-count="2">
+
+    <test name="Chrome Tests">
+        <classes>
+            <class name="test.UIElementValidation"/>
+            <class name="test.FactorialCalculations"/>
+            <class name="test.NoOfLinksinAbout"/>
+            <class name="test.VerifyTheContents"/>
+            <class name="test.BugDetection"/>
+        </classes>
+    </test>
+
+</suite>

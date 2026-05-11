@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-11T12:42:31 IST" name="Regression Suite" finished-at="2026-05-11T12:42:46 IST" duration-ms="14708">
+    <groups>
+    </groups>
+    <test started-at="2026-05-11T12:42:31 IST" name="Chrome Tests" finished-at="2026-05-11T12:42:46 IST" duration-ms="14708">
+      <class name="test.BugDetection">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.BugDetection@2a5c8d3f]" started-at="2026-05-11T12:42:42 IST" name="setup" finished-at="2026-05-11T12:42:45 IST" duration-ms="3528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyNegativeInputBug()[pri:0, instance:test.BugDetection@2a5c8d3f]" started-at="2026-05-11T12:42:45 IST" name="verifyNegativeInputBug" finished-at="2026-05-11T12:42:46 IST" duration-ms="349" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Negative numbers factorials are not handled  expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Negative numbers factorials are not handled  expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at test.BugDetection.verifyNegativeInputBug(BugDetection.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNegativeInputBug -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:test.BugDetection@2a5c8d3f]" started-at="2026-05-11T12:42:46 IST" name="closeApp" finished-at="2026-05-11T12:42:46 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- test.BugDetection -->
+      <class name="test.FactorialCalculations">
+        <test-method signature="verifyFactorial(java.lang.String,java.lang.String)[pri:0, instance:test.FactorialCalculations@2aceadd4]" started-at="2026-05-11T12:42:35 IST" name="verifyFactorial" finished-at="2026-05-11T12:42:35 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [verifyFactorial] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [verifyFactorial] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
+at org.testng.internal.Parameters.createParameters(Parameters.java:699)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFactorial -->
+      </class> <!-- test.FactorialCalculations -->
+      <class name="test.VerifyTheContents">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.VerifyTheContents@3a52dba3]" started-at="2026-05-11T12:42:39 IST" name="setup" finished-at="2026-05-11T12:42:42 IST" duration-ms="2631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validatePageDetails()[pri:0, instance:test.VerifyTheContents@3a52dba3]" started-at="2026-05-11T12:42:42 IST" name="validatePageDetails" finished-at="2026-05-11T12:42:42 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePageDetails -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:test.VerifyTheContents@3a52dba3]" started-at="2026-05-11T12:42:42 IST" name="closeApp" finished-at="2026-05-11T12:42:42 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- test.VerifyTheContents -->
+      <class name="test.NoOfLinksinAbout">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.NoOfLinksinAbout@24aed80c]" started-at="2026-05-11T12:42:35 IST" name="setup" finished-at="2026-05-11T12:42:37 IST" duration-ms="2491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLinksInAboutPage()[pri:0, instance:test.NoOfLinksinAbout@24aed80c]" started-at="2026-05-11T12:42:37 IST" name="verifyLinksInAboutPage" finished-at="2026-05-11T12:42:39 IST" duration-ms="1223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLinksInAboutPage -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:test.NoOfLinksinAbout@24aed80c]" started-at="2026-05-11T12:42:39 IST" name="closeApp" finished-at="2026-05-11T12:42:39 IST" duration-ms="287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- test.NoOfLinksinAbout -->
+      <class name="test.UIElementValidation">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.UIElementValidation@5b12b668]" started-at="2026-05-11T12:42:31 IST" name="setup" finished-at="2026-05-11T12:42:34 IST" duration-ms="2963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateUIElements()[pri:0, instance:test.UIElementValidation@5b12b668]" started-at="2026-05-11T12:42:34 IST" name="validateUIElements" finished-at="2026-05-11T12:42:35 IST" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUIElements -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:test.UIElementValidation@5b12b668]" started-at="2026-05-11T12:42:35 IST" name="closeApp" finished-at="2026-05-11T12:42:35 IST" duration-ms="347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- test.UIElementValidation -->
+    </test> <!-- Chrome Tests -->
+  </suite> <!-- Regression Suite -->
+</testng-results>
